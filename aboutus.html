@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="dashstyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///E:/jquery.js"></script>
+     
+    <title>Welcome to Training and Placement</title>
+    <style>
+html{
+  scroll-behavior: smooth;
+}
+
+        .home{
+          margin-top: -10px;
+  min-height: 90.5vh;
+  background-image: url("i42.jpg");
+  background-size: cover;
+  background-position: center;
+  float: left;
+  width: 100%;
+  padding:0px 15px;
+  position: relative;
+}
+
+.home::before{
+  content: '';
+  position: absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
+.home .home-text{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left: auto;
+  z-index: 10;
+}
+
+.home .home-text h1{
+  font-size:50px;
+  color:#ffffff;
+  margin:10px 0px;
+  font-family: Georgia;
+  font-weight:400;
+  animation: slideLeft 1.5s ease;
+}
+.home .home-text p{
+  font-size:40px;
+  font-family: Gabriola;
+  color: #A3E4D7 ;
+  margin:15px 0px 0px;
+  font-weight:700;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  animation: slideRight 1.5s ease;
+}
+
+@keyframes slideLeft{
+  0%{transform: translateX(-100%);opacity:0}
+  100%{transform: translateX(0);opacity:1}
+}
+@keyframes slideRight{
+  0%{transform: translateX(100%);opacity:0}
+  100%{transform: translateX(0);opacity:1}
+}
+
+footer{
+  float: left;
+  width: 100%;
+  background-color:#292929;
+  padding:50px 0px;
+}
+
+footer .footer-content{
+  float:left;
+  width: 100%;
+
+}
+footer .social-links{
+  float:left;
+  width: 100%;
+  text-align: center;
+  border-top:1px solid #353535;
+  padding-top:15px;
+}
+footer .social-links ul{
+padding:0;
+list-style: none;
+margin:0;
+}
+footer .social-links ul li{
+  display: inline;
+}
+footer .social-links ul li a{
+  display: inline-block;
+  padding:15px 15px;
+}
+footer .social-links ul li a span{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border:1px solid #A3E4D7 ;
+  color:#f3971b;
+  line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    transition: all .5s ease;
+}
+footer .social-links ul li a span:hover{
+  background-color: #A3E4D7 ;
+  color:#ffffff;
+}
+footer .footer-content .box{
+  width:33.33%;
+  float: left;
+  padding:15px;
+  text-align: center;
+}
+footer .footer-content .box .icon span{
+  color:#A3E4D7 ;
+  font-size:30px;
+}
+footer .footer-content .box h4{
+  font-size:16px;
+  color:#ffffff;
+  margin:0;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding:20px 0 0px;
+}
+footer .footer-content .box p{
+   color:#c2c0c3;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing:.5px;
+  
+  font-weight: 400;
+  padding:10px 0;
+  margin:0px; 
+}
+
+  
+    </style>
+  </head>
+  <body background="">
+   <nav>
+    <img src="logo1.png" style="height: 70px;width: 200px" >
+      <div class="logo"></div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+         <li><a href="choosesignup.html">Sign Up</a></li>
+         <li><a href="chooselogin.html">Sign In</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+
+  </nav>
+ 
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+<section class="home" id="home">
+       <div class="container">
+           <div class="home-text">
+                 <h1 style="font-family: Algerian;">Our Mission...</h1>
+                 <p>Welcome to Training and Placement site....If you're looking for something new, you're in the right place. We strive to be industrious and innovative, offering our customers something they want, putting their desires at the top of our priority list. We've come a long way, so we know exactly which direction to take when supplying you with high quality yet budget-friendly support..........</p>
+           </div>
+       </div>
+    </section>
+
+  <footer>
+      <div class="container">
+          <div class="footer-content">
+              <div class="box">
+                  <div class="icon">
+                    <span class="fas fa-user-circle"></span>
+                  </div>
+                  <h4>Nikita Hire</h4>
+                  <p>SVKM's Institute of technology,Dhule<br>
+                    nikita@gmail.com <br>
+                    6432472780
+                  </p>
+              </div>
+              <div class="box">
+                  <div class="icon">
+                     <span class="fas fa-user-circle"></span>
+                  </div>
+                  <h4>Darshana Borse</h4>
+                  <p>SVKM's Institute of technology,Dhule<br>
+                     darshana@gmail.com<br>                 
+                      8647320848
+                  </p>
+              </div>
+              <div class="box">
+                  <div class="icon">
+                     <span class="fas fa-user-circle"></span>
+                  </div>
+                  <h4>Gaurav Shimpi</h4>
+                  <p>SVKM's Institute of technology,Dhule<br>
+                    gaurav@gmail.com<br>
+                    9894949288
+                  </p>
+              </div>
+          </div>
+          <div class="social-links">
+             <ul>
+               <li><a href=""><span class="fa fa-facebook"></span></a></li>
+               <li><a href=""><span class="fa fa-linkedin"></span></a></li>
+               <li><a href=""><span class="fa fa-skype"></span></a></li>
+               <li><a href=""><span class="fa fa-instagram"></span></a></li>
+             </ul>
+          </div>
+      </div>
+   </footer>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+

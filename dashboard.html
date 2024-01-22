@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Training and Placement</title>
+    <style>
+
+   body {
+
+   }
+   .home{
+
+    min-height: 90.5vh;
+   background-image: url("i41.jpg");
+  margin-top: -400px;
+  background-size: cover;
+  background-position: center;
+   }
+.centertext {
+    width: 1000px;
+    margin: 400px auto;
+}
+
+.centertext h1 {
+    text-align: center;
+    font-size: 60px;
+    color: black ;
+    font-weight: bold;
+    animation: textanimation 1s ease-in-out;
+    margin-top: -370px;
+    font-family:Algerian;
+    font-style:bold;
+    margin-left: -50px;
+    margin-bottom: 50px;
+}
+
+@keyframes textanimation {
+    0% {
+        letter-spacing: 12px;
+    }
+    100% {
+        letter-spacing: 1px;
+    }
+}
+
+.text-animation {
+  color:#0B6351;
+  opacity:0;
+  margin-right: 500px;
+  margin-top: -300px;
+}
+.text-animation span {
+  position:relative;
+  top:10px;
+  left:10px;
+  font-size:40px;
+  font-weight:600;
+  font-family: Gabriola;
+  opacity:0;
+  text-transform:;
+  animation:fade 400ms ease-in-out forwards;
+}
+.center {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left: 10px;
+  margin-right: -600px;
+  margin-top: 230px;
+  transform:translate(-50%,-50%);
+  
+}
+@keyframes fade {
+  0% {
+    top:10px;
+    left:10px;
+    filter:blur(15px);
+    opacity:0;
+  }
+  50% {
+    filter:blur(10px);
+    opacity:0.9;
+  }
+  100% {
+    top:0px;
+    left:0px;
+    filter:blur(0px);
+    opacity:1;
+  }  
+}
+
+
+
+  
+    </style>
+    <link rel="stylesheet" href="dashstyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///E:/jquery.js"></script>
+  </head>
+  <body background="">
+   <nav>
+      <div class="logo"></div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+         <li><a href="choosesignup.html">Sign Up</a></li>
+         <li><a href="chooselogin.html">Sign In</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </div>
+
+  </nav><!---
+   <img src="i2.jpg" style="width: 1263px;height: 690px">--->
+ 
+    <script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+      <div class="home">
+    <div class="centertext">
+        <h1>Training And Placement</h1>
+    </div>
+
+<div class="center">
+  <div class="text-animation">
+    Beginning with exercise, the best training program available for real result is circuit training. An organization's ability to learn, and translate that into action rapidly is the ultimate competitive advantage.........
+  </div>
+</div>
+
+<script>
+  var wrapper = document.getElementsByClassName("text-animation")[0];
+wrapper.style.opacity="1";
+wrapper.innerHTML = wrapper.textContent.replace(/./g,"<span>$&</span>");
+
+var spans = wrapper.getElementsByTagName("span");
+
+for(var i=0;i<spans.length;i++){
+  spans[i].style.animationDelay = i*40+"ms";
+
+} 
+</script>
+
+</div>
+
+  </body>
+</html>
+
+
+
